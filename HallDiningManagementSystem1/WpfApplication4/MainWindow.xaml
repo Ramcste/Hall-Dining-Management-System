@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApplication4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"  MinWidth="800" MinHeight="600" Closing="MainWindow_OnClosing" Height="594" Width="796">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42" />
+            <RowDefinition />
+            <RowDefinition Height="42" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Name="Panel" Grid.Row="1">
+        <Image Source="Images\Ram.png"  Stretch="UniformToFill" />
+        </StackPanel>
+        <Menu Grid.Row="0" Name="Menu">
+            <MenuItem Header="StudentEntry" FontSize="18" Height="30">
+                <MenuItem Header="StudentUI" Name="StudentItem" Click="StudentItem_OnClick" />
+            </MenuItem>
+            <MenuItem Header="MealEntry" FontSize="18" Height="30">
+                <MenuItem Header="MealEntryUI" Name="MealEntryItem" Click="MealEntryItem_OnClick" />
+            </MenuItem>
+            <MenuItem Header="Feast" Height="30" FontSize="18">
+                <MenuItem Header="FeastUI" Name="FeastItem" Click="FeastItem_OnClick" />
+            </MenuItem>
+            <MenuItem Header="Calculation" FontSize="18" Height="30">
+                <MenuItem Header="CalculationUI" Name="CalculationItem" Click="CalculationItem_OnClick" />
+            </MenuItem>
+            <MenuItem Header="BlackList" FontSize="18" Height="30">
+                <MenuItem Header="BlackListUI" Name="BlackListItem" Click="BlackListItem_OnClick" />
+            </MenuItem>
+            <MenuItem Header="About" Height="30" FontSize="18">
+                <MenuItem Header="AboutDinningManagementSystem" Name="AboutDmsItem" Click="AboutDmsItem_OnClick" />
+            </MenuItem>
+
+
+        </Menu>
+        <Border Background="DarkSlateBlue" Grid.Row="2">
+            <TextBlock FontSize="32" HorizontalAlignment="Center">This System is developed by Mr Ram</TextBlock>
+        </Border>
+
+    </Grid>
+</Window>

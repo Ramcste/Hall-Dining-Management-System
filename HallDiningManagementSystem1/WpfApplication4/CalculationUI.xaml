@@ -1,0 +1,208 @@
+﻿<Window x:Class="WpfApplication4.CalculationUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CalculationUI" Height="600" Width="800" MinWidth="800" MinHeight="600" Loaded="Window_Loaded_1">
+    <Grid>
+        <TabControl Name="TC" Background="DeepPink" SelectionChanged="TC_SelectionChanged">
+            <TabItem Height="30" Header="Marketing Expenses" FontSize="15">
+                <Grid Background="DarkSlateGray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" Height="30" FontSize="15"
+                           HorizontalAlignment="Right">
+                        Manager Id:
+                    </Label>
+                    <ComboBox Name="Combomanagerid" Grid.Row="1" Grid.Column="2" Height="30" VerticalAlignment="Center"
+                              Margin="0,10" Width="250" SelectionChanged="Combomanagerid_SelectionChanged" />
+
+                    <Label Grid.Row="2" Foreground="White" FontWeight="Bold" Grid.Column="1" VerticalAlignment="Center" Height="30"
+                           HorizontalAlignment="Right">
+                        Manager Name:
+                    </Label>
+                    <ComboBox Name="Combomanagername" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center"
+                              Height="30" />
+
+                    <Label Grid.Row="3" Grid.Column="1" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" Height="30"
+                           HorizontalAlignment="Right">
+                        Marketing Date:
+                    </Label>
+                    <DatePicker Name="DtPicker" Grid.Row="3" Grid.Column="2" Height="30" VerticalAlignment="Center" />
+
+                    <Label Grid.Row="4" Foreground="White" FontWeight="Bold" Grid.Column="1" VerticalAlignment="Center">AmountExpendonmarketing:</Label>
+                
+                    <TextBox Name="Txtamount" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="30" />
+
+                    <Border Background="DodgerBlue" Grid.Row="6" Grid.ColumnSpan="4" Grid.Column="0">
+                        <Button Name="Btnsave" MinWidth="80" Height="30" VerticalAlignment="Center"
+                                HorizontalAlignment="Right" Margin="0,0,20,0" Click="Btnsave_Click">
+                            Save
+                        </Button>
+                    </Border>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Height="30" Header="Marketing Details" FontSize="15">
+                <Grid Background="Coral">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Height="30" FontSize="15"
+                           HorizontalAlignment="Right">
+                        Manager Id:
+                    </Label>
+                    <ComboBox Name="CombomanagerId1" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center"
+                              Height="30" SelectionChanged="Combomanagerid1_SelectionChanged" />
+
+                    <ListView Name="Listmanager" ItemsSource="{Binding Path=Table}" Grid.Row="2" Grid.Column="2">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Date" Width="130"
+                                                DisplayMemberBinding="{Binding Marketingdate,StringFormat= /{0:d}}" />
+                                <GridViewColumn Header="Amount" Width="110" DisplayMemberBinding="{Binding Amount}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <Border Background="DodgerBlue" Grid.Row="4" Grid.ColumnSpan="4" Grid.Column="0">
+                        <Button Name="Btnokay" MinWidth="80" VerticalAlignment="Center" Height="30"
+                                HorizontalAlignment="Right" Click="Btnokay_Click">
+                            !!Okay!!
+                        </Button>
+                    </Border>
+
+                </Grid>
+            </TabItem>
+            <TabItem Height="30" Header="Edit Marketing Expenses" FontSize="15">
+                <Grid Background="DarkTurquoise">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Height="30" FontSize="15"
+                           HorizontalAlignment="Right">
+                        Manager Id:
+                    </Label>
+                    <ComboBox Name="CombomanagerId2" Grid.Row="1" Grid.Column="2" Height="30"
+                              VerticalAlignment="Center" Margin="0,10" Width="250"
+                              SelectionChanged="CombomanagerId2_SelectionChanged" />
+
+                    <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="30"
+                           HorizontalAlignment="Right">
+                        Marketing Date:
+                    </Label>
+                    <DatePicker Name="DtPicker1" Grid.Row="2" Grid.Column="2" Height="30" VerticalAlignment="Center" />
+
+                    <Label Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">AmountExpendonmarketing:</Label>
+                    <TextBox Name="Txtamount1" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Height="30" />
+
+                    <Border Background="DodgerBlue" Grid.Row="5" Grid.ColumnSpan="4" Grid.Column="0">
+                        <Button Name="Btnupdate" MinWidth="80" Height="30" VerticalAlignment="Center"
+                                HorizontalAlignment="Right" Click="Btnupdate_Click" Margin="0,10,10,10">
+                            Update
+                        </Button>
+                    </Border>
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Height="30" FontSize="15" Header=" Meal Rate Calculation">
+                <Grid Background="BlanchedAlmond">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="Btncalculate" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Height="30"
+                            HorizontalAlignment="Center" Click="Btncalculate_Click">
+                        Calculate Meal Rate
+                    </Button>
+
+                    <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="30"
+                           HorizontalAlignment="Right">
+                        Total Meal:
+                    </Label>
+                    <TextBox Name="Txttotalmeal" Grid.Row="2" Grid.Column="2" Height="30" VerticalAlignment="Center" />
+
+                    <Label Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center">Total Marketing Expenses</Label>
+                    <TextBox Name="Txtmarketingexpenses" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center"
+                             Height="30" />
+
+                    <Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                           FontSize="15">
+                        Meal Rate:
+                    </Label>
+                    <TextBox Name="Txtmealrate" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="30" />
+
+                    <Label Grid.Row="5" Grid.Column="1" Height="30" HorizontalAlignment="Right"
+                           VerticalAlignment="Center">
+                        Insert Id:
+                    </Label>
+                    <TextBox Name="Txtcheckid" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" Height="30" />
+
+                    <Button Name="Btncheck" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" MinWidth="75" Height="30"
+                            HorizontalAlignment="Center" Click="Btncheck_Click">
+                        Check
+                    </Button>
+
+                    <Border Background="DeepSkyBlue" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4">
+                        <Button Name="Btnokay1" MinWidth="80" VerticalAlignment="Center" Height="30"
+                                HorizontalAlignment="Right" Click="Btnokay1_Click">
+                            Okay
+                        </Button>
+                    </Border>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,50 @@
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe.config
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.pdb
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\BlackListUI.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\CalculationUI.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\LoginWindow.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\ManagerUI.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\MealUI.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\StudentUI.baml
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\BlackListUI.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\CalculationUI.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\LoginWindow.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\ManagerUI.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\MealUI.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\StudentUI.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\App.g.cs
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4_MarkupCompile.cache
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.g.resources
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.Properties.Resources.resources
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csproj.GenerateResource.Cache
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.exe
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.pdb
+C:\Users\Roshani\Documents\Visual Studio 2012\Projects\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csprojResolveAssemblyReference.cache
+E:\WPF Examples\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe.config
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.exe
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.pdb
+E:\WPF Examples\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.exe
+E:\WPF Examples\WpfApplication4\WpfApplication4\bin\Debug\WpfApplication4.pdb
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csprojResolveAssemblyReference.cache
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\BlackListUI.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\CalculationUI.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\LoginWindow.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\ManagerUI.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\MealUI.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\StudentUI.baml
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\BlackListUI.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\CalculationUI.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\LoginWindow.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\MainWindow.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\ManagerUI.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\MealUI.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\StudentUI.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\App.g.cs
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4_MarkupCompile.cache
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.g.resources
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.Properties.Resources.resources
+E:\WPF Examples\WpfApplication4\WpfApplication4\obj\Debug\WpfApplication4.csproj.GenerateResource.Cache

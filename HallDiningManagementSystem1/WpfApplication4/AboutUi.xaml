@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApplication4.AboutUi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AboutUi" Width="800" Height="600" MinHeight="600" MinWidth="800">
+    <Grid Background="DarkGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="250" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label FontWeight="Bold" Height="35" Foreground="White" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1"
+               HorizontalContentAlignment="Center">
+            About Developer
+        </Label>
+        <Image Grid.Column="2" Source="Images\rambabu.png" Stretch="UniformToFill" HorizontalAlignment="Left"
+               Height="230" Margin="20,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="182" />
+        
+        <Label FontWeight="Bold" Height="35" Grid.ColumnSpan="2" Foreground="White" Grid.Column="1" Grid.Row="2"
+               HorizontalContentAlignment="Center">
+            Rambabu Prasad Kushwaha
+        </Label>
+ 
+        <Label FontWeight="Bold" Grid.Column="1" Grid.Row="2" Margin="0.5,49,199.5,163" Foreground="White" Grid.ColumnSpan="2">Phone number:+8801740169744</Label>
+        
+        <Label FontWeight="Bold" Height="35" Grid.Column="1" Grid.Row="3"   Foreground="White">
+            Email id:lucky.guyram@gmail.com
+        </Label>
+
+        <Border Grid.Row="5" Grid.ColumnSpan="4"  Grid.Column="0"  Background="CadetBlue">
+            
+            <Button FontWeight="Bold" HorizontalContentAlignment="Center" MinWidth="80"
+            
+                    HorizontalAlignment="Right" Height="25" Margin="0,0,20,0" Content="Okay" Click="Button_Click_1" />
+        </Border>
+
+    </Grid>
+</Window>
